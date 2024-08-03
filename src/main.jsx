@@ -2,9 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import About from './about.jsx'
-//import faq from './faq.jsx'
-//import locate from './locate.jsx'
-//import SignUp from './signup.jsx'
+import SignIn from './signin.jsx'
+//import Faq from './faq.jsx'
+//import Locate from './locate.jsx'
+import SignUp from './signup.jsx'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 
 import {
@@ -43,32 +44,16 @@ const router = createBrowserRouter([
     path:"locate",
     element: <Locate />,
   },
-  /*
+
+  {
+    path:"signin",
+    element: <SignIn />,
+  },
+
   {
     path: "/signup",
     element: <SignUp />,
-  },
-
-  {
-    path: "/register",
-    element: <register />,
-  },
-
-  {
-    path: "/about",
-    element: <about />,
-  },
-
-  {
-    path: "/faq",
-    element: <faq />,
-  },
-
-  {
-    path: "/locate",
-    element: <locate />,
-  },
-  */
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
