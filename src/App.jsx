@@ -1,5 +1,7 @@
+import { useState } from "react";
+import { Link } from '@chakra-ui/react'
+//import { ExternalLinkIcon } from '@chakra-ui/icons'
 import {
-  useState,
   Image,
   Box,
   Text,
@@ -18,9 +20,7 @@ function App() {
 
         <Spacer />
         <Box p="10">
-          <Link>
-          Chakra UI
-            </Link>
+          <Link>Chakra UI</Link>
           <Button colorScheme='green' marginTop={"-5px"} marginLeft={4}>
               Sign In
             </Button>
