@@ -126,6 +126,16 @@ export default function About() {
           At SnapWaste, we believe that proper waste management is crucial for a sustainable future. Join us in making a positive impact on our environment by disposing of waste the right way, one snap at a time.
         </Text>
       </Box>
+
+    <Flex>
+        <Box marginBottom='-33px' bg='green.200' w={'100%'}>
+          <Center>
+            <Text marginTop='1' marginRight={5}>
+              Privacy Policy and Terms of Service
+              </Text>
+            </Center>
+          </Box>
+        </Flex>
     </>
   );
 }

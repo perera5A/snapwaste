@@ -16,6 +16,9 @@ import {
   Container,
   Grid,
   GridItem,
+  Stack,
+  useColorModeValue
+
 } from "@chakra-ui/react";
 
 export default function App() {
@@ -111,7 +114,7 @@ export default function App() {
             <Box marginTop={-20}>
               <Center>
                 <Text fontSize="lg" mb="4">
-                    Welcome to SnapWaste, your go-to platform for waste identification and disposal guidance. We help you make environmentally conscious decisions by simplify uploading an image of your waste. Using advanced image recognition software, we help you determine whether the item is recyclable, garbage, or compost. 
+                    Welcome to SnapWaste, your go-to platform for waste identification and disposal guidance. We help you make environmentally conscious decisions by simply uploading an image of your waste. Using advanced image recognition software, we help you determine whether the item is recyclable, garbage, or compost. 
                   </Text>
                 </Center>
               <Center>   
@@ -124,6 +127,24 @@ export default function App() {
               </Box>
           </GridItem> 
       </Grid>
+
+      <Flex>
+        <Spacer />
+          <Box p="2" marginTop={51}>
+            </Box>
+        <Spacer />
+      </Flex>
+
+      <Flex>
+        <Box marginBottom='-33px' bg='green.200' w={'100%'}>
+          <Center>
+            <Text marginTop='1' marginRight={5}>
+              Privacy Policy and Terms of Service
+              </Text>
+            </Center>
+          </Box>
+        </Flex>
     </>
   );
 }
+
