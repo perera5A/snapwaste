@@ -12,7 +12,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-function About() {
+export default function About() {
   return (
     <>
       <Flex color='green'>
@@ -27,7 +27,7 @@ function About() {
 
         <Spacer />
         <Box p="10">
-          <a href="">
+          <a href="/">
             <Link marginLeft={4} marginRight={4}>
               Home
             </Link>
@@ -129,5 +129,3 @@ function About() {
     </>
   );
 }
-
-export default About;

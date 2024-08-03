@@ -13,6 +13,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Faq from './faq.jsx'
+import Locate from './locate.jsx'
 
 // Step 3: Configure the theme
 const config = {
@@ -36,7 +37,12 @@ const router = createBrowserRouter([
   {
     path:"faq",
     element: <Faq />,
-  }
+  },
+
+  {
+    path:"locate",
+    element: <Locate />,
+  },
   /*
   {
     path: "/signup",

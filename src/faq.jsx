@@ -38,7 +38,7 @@ export default function Faq() {
 
         <Spacer />
         <Box p="10">
-          <a href="">
+          <a href="/">
             <Link marginLeft={4} marginRight={4}>
               Home
             </Link>

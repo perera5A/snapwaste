@@ -14,9 +14,11 @@ import {
   AvatarGroup,
   AvatarBadge,
   Container,
+  Grid,
+  GridItem,
 } from "@chakra-ui/react";
 
-function App() {
+export default function App() {
 
   return (
     <>
@@ -76,64 +78,52 @@ function App() {
       <Flex>
         <Box />
         <Spacer />
-        <Box p="2" marginTop={100}>
+        <Box p="2" marginTop={50}>
 
         </Box>
 
         <Spacer />
       </Flex>
 
-      <Flex>
-        <Box bg='green.400' w='100%' p={4} color='white' borderRadius={25}>
-        <Container maxW='2xl' bg='blue.600' centerContent>
-          <Box padding='4' bg='blue.400' color='black' maxW='md'>
-            <Heading marginTop={20} marginLeft={100}>
-                SnapWaste
-              </Heading>
-            
-            <Text>
-              Welcome to SnapWaste, your go-to platform for waste identification and disposal guidance. We help you make environmentally conscious decisions by simplify uploading an image of your waste. Using advanced image recognition software, we help you determine whether the item is recyclable, garbage, or compost. 
-            </Text>
-          </Box>
-        </Container>
-          
-          <Heading marginTop={20} marginLeft={100}>
-              SnapWaste
+      <Grid
+        h='450px'
+        templateRows='repeat(2, 1fr)'
+        templateColumns='repeat(2, 1fr)'
+        gap={4}
+      >
+        <GridItem rowSpan={1} colSpan={1} bg='white' marginTop={20}>
+            <Heading>
+              <Center>
+                Identify, Recycle, Compost
+              </Center>
             </Heading>
-          
-          <Text>
-            Welcome to SnapWaste, your go-to platform for waste identification and disposal guidance. We help you make environmentally conscious decisions by simplify uploading an image of your waste. Using advanced image recognition software, we help you determine whether the item is recyclable, garbage, or compost. 
-          </Text>
+          </GridItem> 
 
-          <Center>
-            <Box boxSize={"lg"} >
-              <Image marginLeft={40} marginTop={9} borderRadius={25} src="ontarioLand.png"></Image>
-            </Box>
-          </Center>
-        </Box>
-      </Flex>
+          <GridItem rowSpan={2} colSpan={1} bg='green.500' borderRadius={15} marginRight={'10'}>
+            <Heading>
+              <Center>
+                <Image borderRadius={5} marginTop= '6' boxSize= '400' src='HomepagePic.jpg'/>
+              </Center>
+            </Heading>
+          </GridItem> 
 
-      <Spacer />
-
-      <Flex>
-        <Box />
-        <Spacer />
-        <Box p="2" marginTop={100}>
-
-        </Box>
-
-        <Spacer />
-      </Flex>
-
-      <Flex>
-        <Box>
-          <Text marginTop="40px" marginRight={5}>
-            Privacy Policy and Terms of Service
-          </Text>
-        </Box>
-      </Flex>
+          <GridItem rowSpan={1} colSpan={1} bg='white' marginLeft={'10'}>
+            <Box marginTop={-20}>
+              <Center>
+                <Text fontSize="lg" mb="4">
+                    Welcome to SnapWaste, your go-to platform for waste identification and disposal guidance. We help you make environmentally conscious decisions by simplify uploading an image of your waste. Using advanced image recognition software, we help you determine whether the item is recyclable, garbage, or compost. 
+                  </Text>
+                </Center>
+              <Center>   
+                <a href="locate">
+                  <Button colorScheme='green' variant= 'outline'>
+                    Enter Tool 
+                  </Button>
+                </a>
+              </Center>
+              </Box>
+          </GridItem> 
+      </Grid>
     </>
   );
 }
-
-export default App
