@@ -1,21 +1,20 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import About from './about.jsx'
-import SignIn from './signin.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import About from "./about.jsx";
+import SignIn from "./signin.jsx";
 //import Faq from './faq.jsx'
 //import Locate from './locate.jsx'
-import SignUp from './signup.jsx'
-import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import SignUp from "./signup.jsx";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 import {
   BrowserRouter,
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Faq from './faq.jsx'
-import Locate from './locate.jsx'
-
+import Faq from "./faq.jsx";
+import Locate from "./locate.jsx";
 // Step 3: Configure the theme
 const config = {
   initialColorMode: "dark", // Set the initial color mode
@@ -36,30 +35,30 @@ const router = createBrowserRouter([
   },
 
   {
-    path:"faq",
+    path: "/faq",
     element: <Faq />,
   },
 
   {
-    path:"locate",
+    path: "/locate",
     element: <Locate />,
   },
 
   {
-    path:"signin",
+    path: "/signin",
     element: <SignIn />,
   },
 
   {
     path: "/signup",
     element: <SignUp />,
-  }
+  },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ChakraProvider>
       <RouterProvider router={router} />
     </ChakraProvider>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
