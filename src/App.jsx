@@ -145,6 +145,17 @@ export default function App() {
         <Box p="2" marginTop={51}></Box>
         <Spacer />
       </Flex>
+
+    <Flex>
+        <Box marginBottom='-33px' bg='green.200' w={'100%'}>
+          <Center>
+            <Text marginTop='1' marginRight={5}>
+              Privacy Policy and Terms of Service
+              </Text>
+            </Center>
+          </Box>
+        </Flex>
+
     </>
   );
 }

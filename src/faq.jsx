@@ -98,7 +98,7 @@ export default function Faq() {
       </Spacer> 
 
       <Flex
-      minH={'70vh'}
+      minH={'65vh'}
       justify={'center'}
       bg={useColorModeValue('white')}>
       <Container>
