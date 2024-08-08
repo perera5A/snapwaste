@@ -30,7 +30,7 @@ function Locate() {
       method: "POST",
       url: "https://detect.roboflow.com/garbage-classification-qmp4x/11",
       params: {
-        api_key: "AQ76DEOvAyMGi8flg5mu",
+        api_key: "key",
       },
       data: base64,
       headers: {
