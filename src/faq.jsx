@@ -78,7 +78,7 @@ export default function Faq() {
       </Flex>
 
 
-      <Box bg="green.400" p="6" mx="auto">
+      <Box bg="green.300" p="6" mx="auto">
         <Center>
           <Heading as="h2" size="xl" mb="4">
             Frequently Asked Questions
